@@ -1,0 +1,81 @@
+#include <stdio.h>
+#include <math.h>
+int main() {
+    printf("*************** MATHEMATICAL GADGET ***************\n");
+    int choice,c,d;
+    float a,b;
+    printf( "1. Addition\n"
+            "2. Subtraction\n"
+            "3. Multiplication\n"
+            "4. Division\n"
+            "5. Remainder\n"
+            "6. Power of a Number\n"
+            "7. Average of N Numbers\n"
+            "8. Factorial of a Number\n");
+    printf("Enter the Respective Number From The Above List For Your Choice :");
+    scanf("%d",&choice);
+    switch (choice)
+    {
+    case 1:
+        printf("Enter a number :");
+        scanf("%f",&a);
+        printf("Enter an another number :");
+        scanf("%f",&b);
+        printf("Addition value is : %f",a+b);
+        break;
+    case 2:
+        printf("Enter a number :");
+        scanf("%f",&a);
+        printf("Enter an another number :");
+        scanf("%f",&b);
+        printf("Subtraction value is : %f",a-b);
+        break;
+    case 3:
+        printf("Enter a number :");
+        scanf("%f",&a);
+        printf("Enter an another number :");
+        scanf("%f",&b);
+        printf("Multiplication value is : %f",a*b);
+        break;
+    case 4:
+        printf("Enter a number :");
+        scanf("%f",&a);
+        printf("Enter an another number :");
+        scanf("%f",&b);
+        printf("Division value is : %f",a/b);
+        break;
+    case 5:
+        printf("Enter a number(only integer) :");
+        scanf("%d",&c);
+        printf("Enter an another number(only integer) :");
+        scanf("%d",&d);
+        printf("Remainder value is : %d",c%d);
+        break;
+    case 6:
+        printf("Enter the base number :");
+        scanf("%f",&a);
+        printf("Enter the exponent number :");
+        scanf("%f",&b);
+        printf("Power value is : %f",pow(a,b));
+        break;
+    }
+    if (choice==7){
+        int e,f;
+        float avg=0,g;
+        printf("Enter the count of numbers to retrive average value :");
+        scanf("%d",&e);
+        for (f=0;f<e;f++){
+            printf("Enter the number :");
+            scanf("%f",&g);
+            avg=avg+g;}
+        printf("Average value is : %f",avg/e);}
+    else if (choice==8);
+        int i,f=1,n;    
+        printf("Enter a number: ");    
+        scanf("%d",&n);    
+        for(i=1;i<=n;i++){    
+            f=f*i;    
+            }    
+        printf("Factorial of %d is: %d",n,f); 
+    
+    return 0;}
